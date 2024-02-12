@@ -2,12 +2,27 @@
 
 ---
 
-<section class="min-h-screen w-full grid place-content-center">
-    <form class="w-full h-full" action="" method="post"></form>
+<section class="min-h-screen w-full grid place-content-center bg-[var(--color-disable-dark)]">
+    <form class="col-start-2 col-end-3 row-start-2 row-end-3 w-[90%] m-auto h-full grid gap-6 z-10 place-content-center" action="" method="post">
+        <h2 class="text-3xl font-bold text-center">Get in touch</h2>
+        <div id="nameContainer">
+            <label class="text-2xl text-left pl-4" for="name">Name:</label>
+            <input class="py-1 px-2 rounded-3xl text-2xl w-full bg-[var(--bg-over-dark)]" type="text" name="name" id="name">
+        </div>
+        <div id="emailContainer">
+            <label class="text-2xl text-left pl-4" for="email">Email:</label>
+            <input class="py-1 px-2 rounded-3xl text-2xl w-full bg-[var(--bg-over-dark)]" type="email" name="email" id="email">
+        </div>
+        <button class="text-2xl bg-[var(--accent-dark)] rounded-3xl py-1 px-2 border border-[var(--bg-dark)] hover:bg-[var(--bg-dark)] duration-300 hover:border-[var(--accent-dark)]" type="submit">
+            Contact Us
+        </button>
+    </form>
+    <img class=" col-start-2 col-end-3 row-start-2 row-end-3 h-full w-full object-cover z-0" src="/bg-form-pets.png" alt="">
 </section>
 
 <style>
-    form{
-        background-image: url('/bg-form-pets.png');
+    section{
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 10% 1fr 10%;
     }
 </style>
