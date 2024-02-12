@@ -1,0 +1,39 @@
+---
+import CardServicesPets from '../components/CardServicesPets.astro'
+---
+
+<section id="pets" class="min-h-screen grid gap-8">
+    <h2 class="text-[var(--accent-dark)] pt-10 text-center text-4xl font-bold">
+        Sharing together anywhere
+    </h2>
+    <div id="cardsContainer" class="grid gap-8 pb-10">
+        <CardServicesPets
+        src="/golden-no-bg.avif"
+        alt="Service icon 1"
+        title="Title #1"
+        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae earum asperiores, sunt similique fugit consequuntur."
+        href="#"
+        >Ver más</CardServicesPets>
+        <CardServicesPets
+        src="/cat-no-bg.avif"
+        alt="Service icon 2"
+        title="Title #2"
+        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae earum asperiores, sunt similique fugit consequuntur."
+        href="#"
+        >Ver más</CardServicesPets>
+        <CardServicesPets
+        src="/ico-favicon-ia.png"
+        alt="Service icon 3"
+        title="Title #3"
+        text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae earum asperiores, sunt similique fugit consequuntur."
+        href="#"
+        >Ver más</CardServicesPets>
+    </div>
+</section>
+
+<style>
+    #cardsContainer{
+        grid-auto-rows: min-content;
+        grid-template-columns: repeat(auto-fill, minmax(min(288px, 1fr), 1fr));
+    }
+</style>
