@@ -6,7 +6,7 @@ import CardServicesPets from '../components/CardServicesPets.astro'
     <h2 class="text-[var(--accent-dark)] pt-10 text-center text-4xl font-bold">
         Sharing together anywhere
     </h2>
-    <div id="cardsContainer" class="grid gap-8 pb-10">
+    <div id="cardsContainer" class="grid gap-8 pb-10 lg:w-4/5 m-auto">
         <CardServicesPets
         src="/golden-no-bg.avif"
         alt="Service icon 1"
@@ -34,6 +34,6 @@ import CardServicesPets from '../components/CardServicesPets.astro'
 <style>
     #cardsContainer{
         grid-auto-rows: min-content;
-        grid-template-columns: repeat(auto-fill, minmax(min(288px, 1fr), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
     }
 </style>
